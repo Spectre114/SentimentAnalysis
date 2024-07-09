@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sentiment Analysis</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <h1>Tweet Sentiment Analysis</h1>
+        <form id="tweet-form" method="post" action="/predict/">
+            <label for="tweet">Enter Tweet:</label>
+            <textarea
+                id="tweet"
+                name="tweet"
+                rows="4"
+                cols="50"
+            ></textarea>
+            <br>
+            <input type="submit" value="Analyze Sentiment">
+        </form>
+        <div id="result"></div>
+        <script src="/static/script.js"></script>
+    </body>
+</html>
